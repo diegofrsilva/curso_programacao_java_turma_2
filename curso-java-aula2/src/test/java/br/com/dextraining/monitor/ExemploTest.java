@@ -1,4 +1,4 @@
-package br.com.dextraining.test;
+package br.com.dextraining.monitor;
 
 import org.junit.Assert;
 import org.junit.Test;

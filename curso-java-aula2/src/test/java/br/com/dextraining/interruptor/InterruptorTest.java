@@ -18,8 +18,10 @@ public class InterruptorTest {
 	public void testarDesligar() {
 		Lampada lampada = new Lampada("Philips", 60);
 		Interruptor interruptor = new Interruptor(lampada);
+		
 		interruptor.apertar();
 		Assert.assertTrue(lampada.estaLigada());
+		
 		interruptor.apertar();
 		Assert.assertFalse(lampada.estaLigada());
 	}

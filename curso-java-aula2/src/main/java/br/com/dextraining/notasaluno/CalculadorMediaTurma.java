@@ -15,17 +15,19 @@ public class CalculadorMediaTurma {
 			System.out.println("Nome: ");
 			scanner.nextLine();
 			Aluno aluno = new Aluno(scanner.nextLine());
+			double notas[] = new double[3];
 
 			for (int indiceNota = 0; indiceNota < 3; indiceNota++) {
 				System.out.println("Nota " + (indiceNota + 1) + ": ");
-				aluno.notas[indiceNota] = scanner.nextDouble();
+				notas[indiceNota] = scanner.nextDouble();
 			}
+			aluno.setNotas(notas);
 			alunos[indiceAlunoAtual] = aluno;
 		}
 		for (Aluno aluno : alunos) {
-			System.out.print(aluno.nome);
+			System.out.print(aluno.getNome());
 
-			for (double nota : aluno.notas) {
+			for (double nota : aluno.getNotas()) {
 				System.out.print(" ");
 				System.out.print(nota);
 			}

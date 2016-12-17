@@ -2,7 +2,7 @@ package br.com.dextraining.conta;
 
 public class Conta {
 
-	public double saldo;
+	private double saldo;
 
 	public boolean sacar(double valor) {
 		if (valor > saldo) {

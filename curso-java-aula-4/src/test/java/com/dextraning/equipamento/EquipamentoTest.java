@@ -7,6 +7,7 @@ public class EquipamentoTest {
 
 	@Test
 	public void testarImpressora() {
+		System.out.println(12);
 		double preco = 200;
 		Impressora impressora = new Impressora("HP", preco);
 		Assert.assertEquals(Double.valueOf(preco),

@@ -4,6 +4,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.dextraining.folhapagamento.Diretor;
+import com.dextraining.folhapagamento.FolhaPagamento;
+import com.dextraining.folhapagamento.Gerente;
+import com.dextraining.folhapagamento.Secretaria;
+import com.dextraining.folhapagamento.Supervisor;
+
 public class FolhaPagamentoTest {
 
 	private FolhaPagamento folhaPagamento;

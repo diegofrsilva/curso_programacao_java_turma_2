@@ -1,4 +1,4 @@
-package com.dextraning.folhapagamento;
+package com.dextraining.folhapagamento;
 
 public class Diretor extends Funcionario {
 

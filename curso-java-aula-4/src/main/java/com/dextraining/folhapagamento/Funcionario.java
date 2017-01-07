@@ -1,4 +1,4 @@
-package com.dextraning.folhapagamento;
+package com.dextraining.folhapagamento;
 
 public abstract class Funcionario {
 	private String nome;

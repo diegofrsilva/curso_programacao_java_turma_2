@@ -3,6 +3,10 @@ package com.dextraning.equipamento;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.dextraining.equipamento.Cadeira;
+import com.dextraining.equipamento.Impressora;
+import com.dextraining.equipamento.Televisao;
+
 public class EquipamentoTest {
 
 	@Test

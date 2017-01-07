@@ -1,4 +1,4 @@
-package com.dextraning.equipamento;
+package com.dextraining.equipamento;
 
 public class Impressora extends Equipamento {
 

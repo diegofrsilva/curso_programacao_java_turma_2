@@ -2,7 +2,7 @@ package com.dextraining.aula5.garagem;
 
 import java.util.Collection;
 
-public interface Garagem {
+public interface Garagem extends Iterable<Carro>{
 
 	public boolean adicionar(Carro carro);
 

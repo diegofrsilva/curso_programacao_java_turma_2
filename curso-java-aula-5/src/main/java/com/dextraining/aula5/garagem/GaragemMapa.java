@@ -1,7 +1,11 @@
 package com.dextraining.aula5.garagem;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 public class GaragemMapa implements Garagem {
@@ -29,6 +33,12 @@ public class GaragemMapa implements Garagem {
 	}
 
 	public Collection<Carro> getCarros() {
-		return carros.values();
+		List<Carro> carrosOrdenados = new ArrayList<Carro>(carros.values());
+		Collections.sort(carrosOrdenados, new CarroComparator());
+		return carrosOrdenados;
+	}
+
+	public Iterator<Carro> iterator() {
+		return getCarros().iterator();
 	}
 }

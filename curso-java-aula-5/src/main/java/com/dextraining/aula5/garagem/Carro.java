@@ -1,6 +1,6 @@
 package com.dextraining.aula5.garagem;
 
-public class Carro {
+public class Carro implements Comparable<Carro> {
 
 	private String marca;
 	private String modelo;
@@ -77,5 +77,9 @@ public class Carro {
 		} else if (!placa.equals(other.placa))
 			return false;
 		return true;
+	}
+
+	public int compareTo(Carro outroCarro) {
+		return placa.compareTo(outroCarro.placa);
 	}
 }

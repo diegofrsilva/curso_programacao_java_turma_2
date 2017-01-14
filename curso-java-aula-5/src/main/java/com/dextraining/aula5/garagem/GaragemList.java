@@ -3,6 +3,7 @@ package com.dextraining.aula5.garagem;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class GaragemList implements Garagem {
@@ -41,6 +42,11 @@ public class GaragemList implements Garagem {
 	}
 
 	public Collection<Carro> getCarros() {
+		Collections.sort(carros, new CarroComparator());
 		return Collections.unmodifiableList(carros);
+	}
+
+	public Iterator<Carro> iterator() {
+		return getCarros().iterator();
 	}
 }

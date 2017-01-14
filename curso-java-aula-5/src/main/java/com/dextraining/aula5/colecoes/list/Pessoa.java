@@ -1,6 +1,6 @@
 package com.dextraining.aula5.colecoes.list;
 
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa> {
 
 	private String nome;
 	private String cpf;
@@ -46,5 +46,9 @@ public class Pessoa {
 		} else if (!cpf.equals(other.cpf))
 			return false;
 		return true;
+	}
+
+	public int compareTo(Pessoa o) {
+		return nome.compareTo(o.nome);
 	}
 }

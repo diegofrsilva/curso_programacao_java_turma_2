@@ -10,7 +10,7 @@ public class GaragemTest {
 
 	@Before
 	public void before() {
-		this.garagem = new GaragemMapa();
+		this.garagem = new GaragemList();
 	}
 
 	@Test

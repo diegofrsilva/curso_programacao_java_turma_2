@@ -1,6 +1,7 @@
 package com.dextraining.aula5.colecoes.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExemploListaPessoa {
@@ -14,10 +15,17 @@ public class ExemploListaPessoa {
 
 		System.out.println(pessoas.size());
 		System.out.println(pessoas.isEmpty());
-		System.out.println("Index of: " + pessoas.indexOf(new Pessoa("Juquinha", "000000000000")));
+		System.out.println("Index of: "
+				+ pessoas.indexOf(new Pessoa("Juquinha", "000000000000")));
+
+		Iterator<Pessoa> iterator = pessoas.iterator();
+		while (iterator.hasNext()) {
+			Pessoa pessoa = iterator.next();
+			System.out.println(pessoa);
+		}
 
 		for (Pessoa pessoa : pessoas) {
-			System.out.println(pessoa);
+			pessoas.remove(pessoa);
 		}
 	}
 }

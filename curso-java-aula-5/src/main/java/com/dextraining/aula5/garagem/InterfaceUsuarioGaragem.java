@@ -30,7 +30,7 @@ public class InterfaceUsuarioGaragem {
 
 	private static void listar(Garagem garagem) {
 		System.out.println("\nCarros encontrados: ");
-		for (Carro carro : garagem.getCarros()) {
+		for (Carro carro : garagem) {
 			System.out.println(carro);
 		}
 		System.out.println();

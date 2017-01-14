@@ -1,8 +1,11 @@
 package com.dextraining.aula5.garagem;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class GaragemSet implements Garagem {
@@ -36,6 +39,12 @@ public class GaragemSet implements Garagem {
 	}
 
 	public Collection<Carro> getCarros() {
-		return Collections.unmodifiableSet(carros);
+		List<Carro> carrosOrdenados = new ArrayList<Carro>(carros);
+		Collections.sort(carrosOrdenados, new CarroComparator());
+		return carrosOrdenados;
+	}
+
+	public Iterator<Carro> iterator() {
+		return getCarros().iterator();
 	}
 }

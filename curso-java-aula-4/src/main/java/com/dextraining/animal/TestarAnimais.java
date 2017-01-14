@@ -8,8 +8,8 @@ public class TestarAnimais {
 		AnimalExaminavel baleia = new Baleia();
 
 		if (qualquer instanceof AnimalExaminavel) {
-			AnimalExaminavel humano = (AnimalExaminavel) qualquer;
-			System.out.println("eh animal examinavel!");
+			AnimalExaminavel examinavel = (AnimalExaminavel) qualquer;
+			System.out.println("eh animal examinavel! " + examinavel.getClass());
 		}
 
 		Veterinario veterinario = new Veterinario();

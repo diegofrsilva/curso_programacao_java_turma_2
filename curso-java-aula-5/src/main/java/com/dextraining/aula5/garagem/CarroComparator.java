@@ -2,6 +2,14 @@ package com.dextraining.aula5.garagem;
 
 import java.util.Comparator;
 
+/**
+ * Compara dois carros de acordo com:
+ * 
+ * marca, modelo, ano e preco
+ * 
+ * @author Diego Farias da Silva
+ *
+ */
 public class CarroComparator implements Comparator<Carro> {
 
 	// marca, modelo, ano e preço.

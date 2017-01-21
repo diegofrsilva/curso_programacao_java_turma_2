@@ -1,7 +1,16 @@
 package com.dextraining.aula5.garagem;
 
+/**
+ * Classe que armazena os dados de um carro.
+ * 
+ * @author Diego Farias da Silva
+ *
+ */
 public class Carro implements Comparable<Carro> {
 
+	/**
+	 * Marca do carro
+	 */
 	private String marca;
 	private String modelo;
 	private String placa;

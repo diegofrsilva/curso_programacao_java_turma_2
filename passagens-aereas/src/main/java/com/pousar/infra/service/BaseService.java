@@ -77,6 +77,9 @@ public class BaseService<T extends Entidade> {
 	 */
 	public void remover(Long id) {
 		dados.remove(id);
+		if (arquivo != null) {
+			arquivo.salvarTodos(dados.values());
+		}
 	}
 
 	/**
